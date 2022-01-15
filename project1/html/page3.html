@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณเกรด</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+            font-style: italic;
+        }
+        label{
+            line-height: 1.6;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Grade Calculating</h1>
+    <h2>ยินดีต้อนรับ คุณ <span id="name" style="color: darkblue; font-weight: bold; font-style: italic;"></span></h2>
+    <form>
+        <label id="math" for="math">Mathematic: </label><br>
+        <input type="text" id="inMath" name="math" placeholder="กรอกคะแนนของคุณ">
+        <br><label id="eng" for="eng">English: </label><br>
+        <input type="text" id="inEng" name="eng" placeholder="กรอกคะแนนของคุณ">
+        <br><label id="sci" for="sci">Science: </label><br>
+        <input type="text" id="inSci" name="sci" placeholder="กรอกคะแนนของคุณ"><br><br>
+        <button type="button" onclick="showScore()">submit</button>
+    </form>
+    <p>คะแนนวิชา 'คณิต' ของคุณ [ <span id="gMath" style="color: green;"></span> ]</p>
+    <p>คะแนนวิชา 'อังกฤษ' ของคุณ [ <span id="gEng" style="color: green;"></span> ]</p>
+    <p>คะแนนวิชา 'วิทยาศาสตร์' ของคุณ [ <span id="gSci" style="color: green;"></span> ]</p>
+    
+    <hr>
+    <br><br>
+    <button id="buttPts" type="button" onclick="butt()">เริ่มการประมวลผลเกรด</button>
+    
+
+    <script type="text/javascript" src="../js/practice3.js"></script>
+</body>
+</html>
